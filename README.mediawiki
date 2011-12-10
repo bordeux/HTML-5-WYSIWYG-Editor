@@ -1,0 +1,14 @@
+[[http://bordeux.net/XVweb/|&raquo; XVweb Project Home Page]]
+
+<p align="center"><img src="http://img402.imageshack.us/img402/8499/html5logo.jpg"  /></p>
+
+= HTML 5 WYSIWYG Editor =
+.... in progress... 92% done ;] This is part of XVweb project 
+What's new in 0.47? Now, you can paste screenshot to editor. Try - press PrintScreen? key and paste to edtior. 
+
+= Used libraries =
+	* jQuery + UI
+	
+= Demo =
+
+<p align="center"><a href="http://html-5-wysiwyg.googlecode.com/svn/trunk/index.html"> <img src="http://img140.imageshack.us/img140/7695/demoy.png"  /> </a> </p>

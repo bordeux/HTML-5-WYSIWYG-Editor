@@ -11,4 +11,4 @@ What's new in 0.47? Now, you can paste screenshot to editor. Try - press PrintSc
 	
 = Demo =
 
-<p align="center"><a href="http://html-5-wysiwyg.googlecode.com/svn/trunk/index.html"> <img src="http://img140.imageshack.us/img140/7695/demoy.png"  /> </a> </p>
+<p align="center"><a href="http://bordeux.github.com/HTML-5-WYSIWYG-Editor/"> <img src="http://img140.imageshack.us/img140/7695/demoy.png"  /> </a> </p>

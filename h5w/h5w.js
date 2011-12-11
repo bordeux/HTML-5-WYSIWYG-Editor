@@ -597,10 +597,14 @@
 								});
 							jQuery(document).keydown(function (event) {
 									if (event.keyCode == 9) {
-										document.execCommand('insertHTML', false, "\t");
-										event.preventDefault();
-										event.returnValue = false;
-									}
+										if($(event.target).is(".h5w-content")){
+											document.execCommand('insertHTML', false, "\t");
+											event.preventDefault();
+											event.returnValue = false;
+											return false;
+										};
+										return true;
+									};
 								});
 							jQuery(MainHandle).find(".h5w-tabs-bottom").tabs();
 							jQuery(MainHandle).find(".h5w-tabs-bottom .ui-tabs-nav, .h5w-tabs-bottom .ui-tabs-nav > *") 

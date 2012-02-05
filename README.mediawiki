@@ -6,6 +6,10 @@
 .... in progress... 92% done ;] This is part of XVweb project 
 What's new in 0.47? Now, you can paste screenshot to editor. Try - press PrintScreen? key and paste to edtior. 
 
+= Do you want changes or new functions? =
+Yes? Write your proposition <a href="https://github.com/bordeux/HTML-5-WYSIWYG-Editor/issues">HERE!</a>
+
+
 = Used libraries =
 	* jQuery + UI
 	

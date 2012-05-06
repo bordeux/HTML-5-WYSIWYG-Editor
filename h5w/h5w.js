@@ -715,6 +715,29 @@
 					jQuery(this).find(".h5w-refresh-textarea").trigger("click");
 					return jQuery(this).find(".h5w-texarea").val().replace("<!--?php", "<?php");
 				}, 
+				loadLang : function (lang) {
+					jQuery(this).find("[data-h5w-lang]").each(function(){
+						var lang_options = $(this).data("h5w-lang").split("|");
+						var lang_word = lang_options[0];
+						var hthis = $(this);
+						if(typeof lang[lang_word] == "undefined")
+							return true;
+							
+						lang_options.splice(0 ,1);
+						if (lang_options.length <1){
+							hthis.html(lang[lang_word]);
+						}else{
+							$.each(lang_options, function(index, value) { 
+							  if(value == "html"){
+								hthis.html(lang[lang_word]);
+							  }else{
+								hthis.attr(value, lang[lang_word]);
+							  };
+							});
+						}
+					});
+					return true;
+				}, 
 				setContent : function (cont) {
 					jQuery(this).find(".h5w-content").html(cont).trigger("change");
 				}, 

@@ -203,7 +203,7 @@ height: 36px;
 	width: 100%;
 }
 .h5w-seperator {
-	background: url(../img/seperator.png) center 2px no-repeat;
+	background: url(img/seperator.png) center 2px no-repeat;
 	display: block;
 	float: left;
 	height: 18px;
@@ -224,73 +224,73 @@ height: 36px;
 	width: 8px;
 }
 .h5w-bold {
-	background: url(../img/bold.png) center center no-repeat;
+	background: url(img/bold.png) center center no-repeat;
 }
 .h5w-italic {
-	background: url(../img/italic.png) center center no-repeat;
+	background: url(img/italic.png) center center no-repeat;
 }
 .h5w-underline {
-	background: url(../img/underline.png) center center no-repeat;
+	background: url(img/underline.png) center center no-repeat;
 }
 .h5w-strike {
-	background: url(../img/strike.png) center center no-repeat;
+	background: url(img/strike.png) center center no-repeat;
 }
 .h5w-subscript {
-	background: url(../img/subscript.png) center center no-repeat;
+	background: url(img/subscript.png) center center no-repeat;
 }
 .h5w-superscript {
-	background: url(../img/superscript.png) center center no-repeat;
+	background: url(img/superscript.png) center center no-repeat;
 }
 .h5w-paragraph {
-	background: url(../img/paragraph.png) center center no-repeat;
+	background: url(img/paragraph.png) center center no-repeat;
 }
 .h5w-listordered {
-	background: url(../img/listordered.png) center center no-repeat;
+	background: url(img/listordered.png) center center no-repeat;
 }
 .h5w-listunordered {
-	background: url(../img/listunordered.png) center center no-repeat;
+	background: url(img/listunordered.png) center center no-repeat;
 }
 .h5w-hrule {
-	background: url(../img/hrule.png) center center no-repeat;
+	background: url(img/hrule.png) center center no-repeat;
 }
 .h5w-insertimage {
-	background: url(../img/insertimage.png) center center no-repeat;
+	background: url(img/insertimage.png) center center no-repeat;
 }
 .h5w-undo {
-	background: url(../img/undo.png) center center no-repeat;
+	background: url(img/undo.png) center center no-repeat;
 }
 .h5w-redo {
-	background: url(../img/redo.png) center center no-repeat;
+	background: url(img/redo.png) center center no-repeat;
 }
 .h5w-selectall {
-	background: url(../img/selectall.png) center center no-repeat;
+	background: url(img/selectall.png) center center no-repeat;
 }
 .h5w-indent {
-	background: url(../img/indent.png) center center no-repeat;
+	background: url(img/indent.png) center center no-repeat;
 }
 .h5w-outdent {
-	background: url(../img/outdent.png) center center no-repeat;
+	background: url(img/outdent.png) center center no-repeat;
 }
 .h5w-removeformat {
-	background: url(../img/removeformat.png) center center no-repeat;
+	background: url(img/removeformat.png) center center no-repeat;
 }
 .h5w-justifyleft {
-	background: url(../img/justifyleft.png) center center no-repeat;
+	background: url(img/justifyleft.png) center center no-repeat;
 }
 .h5w-justifycenter {
-	background: url(../img/justifycenter.png) center center no-repeat;
+	background: url(img/justifycenter.png) center center no-repeat;
 }
 .h5w-justifyright {
-	background: url(../img/justifyright.png) center center no-repeat;
+	background: url(img/justifyright.png) center center no-repeat;
 }
 .h5w-fontcolor {
-	background: url(../img/font_color.png) center center no-repeat;
+	background: url(img/font_color.png) center center no-repeat;
 }
 .h5w-hilitecolor {
-	background: url(../img/hilitecolor.png) center center no-repeat;
+	background: url(img/hilitecolor.png) center center no-repeat;
 }
 .h5w-paste {
-	background: url(../img/paste.png) top center no-repeat;
+	background: url(img/paste.png) top center no-repeat;
 	height: 45px;
 	margin-right: 5px;
 	padding-top: 46px;
@@ -298,21 +298,21 @@ height: 36px;
 	width: 45px;
 }
 .h5w-cut {
-	background: url(../img/cut.png) center left no-repeat;
+	background: url(img/cut.png) center left no-repeat;
 	height: 16px;
 	margin-top: 4px;
 	padding-left: 17px;
 	width: 40px;
 }
 .h5w-copy {
-	background: url(../img/copy.png) center left no-repeat;
+	background: url(img/copy.png) center left no-repeat;
 	height: 16px;
 	margin-top: 9px;
 	padding-left: 17px;
 	width: 40px;
 }
 .h5w-table {
-	background: url(../img/table.png) top center no-repeat;
+	background: url(img/table.png) top center no-repeat;
 	height: 45px;
 	margin-right: 5px;
 	padding-top: 46px;
@@ -320,7 +320,7 @@ height: 36px;
 	width: 48px;
 }
 .h5w-insertimage {
-	background: url(../img/insertimage.png) top center no-repeat;
+	background: url(img/insertimage.png) top center no-repeat;
 	height: 45px;
 	margin-right: 5px;
 	padding-top: 46px;
@@ -328,7 +328,7 @@ height: 36px;
 	width: 48px;
 }
 .h5w-createlink {
-	background: url(../img/createlink.png) top center no-repeat;
+	background: url(img/createlink.png) top center no-repeat;
 	height: 45px;
 	margin-right: 5px;
 	padding-top: 46px;
@@ -336,7 +336,7 @@ height: 36px;
 	width: 48px;
 }
 .h5w-unlink {
-	background: url(../img/unlink.png) top center no-repeat;
+	background: url(img/unlink.png) top center no-repeat;
 	height: 45px;
 	margin-right: 5px;
 	padding-top: 46px;
@@ -344,7 +344,7 @@ height: 36px;
 	width: 48px;
 }
 .h5w-fontsize {
-	background: #FFF url(../img/fontsize.png) center left no-repeat;
+	background: #FFF url(img/fontsize.png) center left no-repeat;
 	width: 32px;
 	text-align:right;
 	padding-right:3px;
@@ -360,7 +360,7 @@ height: 36px;
 	border-right:none;
 }
 .h5w-fonttype {
-	background: #FFF url(../img/fonttype.png) center left no-repeat;
+	background: #FFF url(img/fonttype.png) center left no-repeat;
 	width: 120px;
 	text-align:right;
 	padding-right:3px;
@@ -459,13 +459,13 @@ font-size:10px;
 padding-left:20px;
 
 }
-.h5w-context-menu .h5w-c-delete {background: url(../img/delete.png) center left no-repeat;}
-.h5w-context-menu .h5w-c-cut {background: url(../img/cut.png) center left no-repeat;}
-.h5w-context-menu .h5w-c-copy {background: url(../img/copy.png) center left no-repeat;}
-.h5w-context-menu .h5w-c-paste {background: url(../img/paste_m.png) center left no-repeat;}
-.h5w-context-menu .h5w-c-quit {background: url(../img/quit.png) center left no-repeat;}
-.h5w-context-menu .h5w-c-attributes {background: url(../img/attributes.png) center left no-repeat;}
-.h5w-context-menu .h5w-c-add {background: url(../img/add.png) center left no-repeat;}
-.h5w-context-menu .h5w-c-attrx {background: url(../img/options.png) center left no-repeat;}
-.h5w-context-menu .h5w-c-options {background: url(../img/optionsx.png) center left no-repeat;}
+.h5w-context-menu .h5w-c-delete {background: url(img/delete.png) center left no-repeat;}
+.h5w-context-menu .h5w-c-cut {background: url(img/cut.png) center left no-repeat;}
+.h5w-context-menu .h5w-c-copy {background: url(img/copy.png) center left no-repeat;}
+.h5w-context-menu .h5w-c-paste {background: url(img/paste_m.png) center left no-repeat;}
+.h5w-context-menu .h5w-c-quit {background: url(img/quit.png) center left no-repeat;}
+.h5w-context-menu .h5w-c-attributes {background: url(img/attributes.png) center left no-repeat;}
+.h5w-context-menu .h5w-c-add {background: url(img/add.png) center left no-repeat;}
+.h5w-context-menu .h5w-c-attrx {background: url(img/options.png) center left no-repeat;}
+.h5w-context-menu .h5w-c-options {background: url(img/optionsx.png) center left no-repeat;}
 .h5w-context-menu .h5w-c-seperator {border-top:1px solid #9C9C9C;}

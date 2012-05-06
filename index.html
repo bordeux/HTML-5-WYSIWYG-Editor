@@ -5,8 +5,8 @@
 		<title>HTML 5 WYSIWYG Editor</title>
 		<link type="text/css" href="css/cupertino/jquery-ui-1.8.12.custom.css" rel="stylesheet" />	
 		<link type="text/css" href="h5w/h5w.css" rel="stylesheet" />	
-		<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="h5w/h5w.js"></script>
 		
 	<style>
@@ -81,18 +81,12 @@
 					}
 				};
 				
-
+				
 				$("#demos").h5w({
 					content :  XVwebFormater.parse(Content) ,	// here you can set content for editor
 					onChange :  XVwebFormater.DeleteFormat,		// you can delete this line
 					onTextarea : XVwebFormater.EditorToHTML, 	// you can delete this line
 					onVisual : XVwebFormater.parse, 			// you can delete this line
-				});
-
-				$(".getresult").click(function(){
-						resultEditHTML = $("#demos").getContent();
-						$("#result").html(resultEditHTML);
-					return false;
 				});
 			
 			});
@@ -123,57 +117,57 @@
 			<!-- Tabs -->
 			<div class="h5w-tabs">
 				<ul>
-					<li><a href="#MainTools">Home</a></li>
-					<li><a href="#Insert">Insert</a></li>
-					<li><a href="#HTMLelements">HTML elements</a></li>
+					<li><a href="#MainTools" data-h5w-lang="home">Home</a></li>
+					<li><a href="#Insert" data-h5w-lang="insert">Insert</a></li>
+					<li><a href="#HTMLelements" data-h5w-lang="htmlelements">HTML elements</a></li>
 				</ul>
 				<div style="float:right">
-					<a href="#undo" class="h5w-icon h5w-undo" data-h5w-function="undo" title="Undo"> </a>
-					<a href="#redo" class="h5w-icon h5w-redo" data-h5w-function="redo" title="Redo"> </a>
-					<a href="#selectall" class="h5w-icon h5w-selectall" data-h5w-function="selectall" title="Select All"> </a>
+					<a href="#undo" class="h5w-icon h5w-undo" data-h5w-function="undo" data-h5w-lang="undo|title" title="Undo"> </a>
+					<a href="#redo" class="h5w-icon h5w-redo" data-h5w-function="redo" data-h5w-lang="redo|title" title="Redo"> </a>
+					<a href="#selectall" class="h5w-icon h5w-selectall" data-h5w-function="selectall" data-h5w-lang="selectall|title" title="Select All"> </a>
 				</div>
 				<div id="MainTools" class="h5w-card">
 					<div class="h5w-section" >
 			
 						<div class="h5w-group" style="width:110px;">
-								<a href="#paste" class="h5w-icon h5w-paste" data-h5w-function="paste" title="Paste">Paste</a>
+								<a href="#paste" class="h5w-icon h5w-paste" data-h5w-function="paste" data-h5w-lang="paste|title|html" title="Paste">Paste</a>
 								<div>
-									<a href="#cut" class="h5w-icon h5w-cut" data-h5w-function="cut" title="Cut"> Cut </a> 
-									<a href="#copy" class="h5w-icon h5w-copy" data-h5w-function="copy" title="Copy"> Copy </a>
+									<a href="#cut" class="h5w-icon h5w-cut" data-h5w-function="cut" data-h5w-lang="cut|title|html" title="Cut"> Cut </a> 
+									<a href="#copy" class="h5w-icon h5w-copy" data-h5w-function="copy" data-h5w-lang="copy|title|html" title="Copy"> Copy </a>
 								</div>
 						</div>
 						<div class="h5w-group-seperator"></div>
 						<div class="h5w-group">
 							<div style="width:200px;">
 							
-								<a href="#fonttype" class="h5w-icon h5w-fonttype" data-h5w-function="fonttype" title="Type font"><span style="font-family: Arial, Helvetica, sans-serif;">Arial</span></a>
-								<a href="#hilitecolorpicker" class="h5w-icon-nojs h5w-fonttype-picker" data-h5w-destination=".h5w-fonttype" data-h5w-onchange-function="functions.fonttype" title="Font type picker">
+								<a href="#fonttype" class="h5w-icon h5w-fonttype" data-h5w-function="fonttype" data-h5w-lang="fonttype|title" title="Type font"><span style="font-family: Arial, Helvetica, sans-serif;">Arial</span></a>
+								<a href="#hilitecolorpicker" class="h5w-icon-nojs h5w-fonttype-picker" data-h5w-destination=".h5w-fonttype" data-h5w-onchange-function="functions.fonttype" data-h5w-lang="fonttypepicker|title" title="Font type picker">
 									<span class="ui-icon ui-icon-triangle-2-n-s"></span>
 								</a>
 				
 			
-								<a href="#fontsize" class="h5w-icon h5w-fontsize" data-h5w-function="fontsize" title="FontSize">11</a>
-								<a href="#hilitecolorpicker" class="h5w-icon-nojs h5w-fontsize-picker" data-h5w-destination=".h5w-fontsize" data-h5w-onchange-function="functions.fontsize" title="Font size picker">
+								<a href="#fontsize" class="h5w-icon h5w-fontsize" data-h5w-function="fontsize" data-h5w-lang="fontsize|title" title="FontSize">11</a>
+								<a href="#hilitecolorpicker" class="h5w-icon-nojs h5w-fontsize-picker" data-h5w-destination=".h5w-fontsize" data-h5w-onchange-function="functions.fontsize" data-h5w-lang="fontsizepicker|title" title="Font size picker">
 									<span class="ui-icon ui-icon-triangle-2-n-s"></span>
 								</a>
 							</div>
 			
 							<div style="clear:both;">
-								<a href="#bold" class="h5w-icon h5w-bold" data-h5w-function="bold" title="Bold"> </a>
-								<a href="#italic" class="h5w-icon h5w-italic" data-h5w-function="italic" title="Italic"> </a>
-								<a href="#underline" class="h5w-icon h5w-underline" data-h5w-function="underline" title="Underline"> </a>
-								<a href="#strike" class="h5w-icon h5w-strike" data-h5w-function="strike" title="Strike"> </a>
-								<a href="#subscript" class="h5w-icon h5w-subscript" data-h5w-function="subscript" title="Subscript"> </a>
-								<a href="#superscript" class="h5w-icon h5w-superscript" data-h5w-function="superscript" title="Superscript"> </a>
+								<a href="#bold" class="h5w-icon h5w-bold" data-h5w-function="bold" data-h5w-lang="bold|title" title="Bold"> </a>
+								<a href="#italic" class="h5w-icon h5w-italic" data-h5w-function="italic"  data-h5w-lang="italic|title" title="Italic"> </a>
+								<a href="#underline" class="h5w-icon h5w-underline" data-h5w-function="underline" data-h5w-lang="underline|title" title="Underline"> </a>
+								<a href="#strike" class="h5w-icon h5w-strike" data-h5w-function="strike" data-h5w-lang="strike|title" title="Strike"> </a>
+								<a href="#subscript" class="h5w-icon h5w-subscript" data-h5w-function="subscript" data-h5w-lang="subscript|title" title="Subscript"> </a>
+								<a href="#superscript" class="h5w-icon h5w-superscript" data-h5w-function="superscript" data-h5w-lang="superscript|title" title="Superscript"> </a>
 								<a href="#seperator" class="h5w-seperator"></a>
 								<br style="clear:both" />
-								<a href="#fontcolor" class="h5w-icon h5w-fontcolor" data-h5w-function="fontcolor" title="Set font color"> </a>
-								<a href="#fontcolorpicker" class="h5w-picker h5w-font-picker" data-h5w-destination=".h5w-font-picker" data-h5w-onchange-function="functions.fontcolor" title="Font color picker" > </a>
+								<a href="#fontcolor" class="h5w-icon h5w-fontcolor" data-h5w-function="fontcolor" data-h5w-lang="setfontcolor|title" title="Set font color"> </a>
+								<a href="#fontcolorpicker" class="h5w-picker h5w-font-picker" data-h5w-destination=".h5w-font-picker" data-h5w-onchange-function="functions.fontcolor" data-h5w-lang="fontcolorpicker|title" title="Font color picker" > </a>
 								<a href="#seperator" class="h5w-seperator"></a>
-								<a href="#fontcolor" class="h5w-icon h5w-hilitecolor" data-h5w-function="hilitecolor" title="Highlight"> </a>
-								<a href="#hilitecolorpicker" class="h5w-picker h5w-hilitecolor-picker" data-h5w-destination=".h5w-hilitecolor-picker" data-h5w-onchange-function="functions.hilitecolor" title="Highlight color picker"> </a>
+								<a href="#fontcolor" class="h5w-icon h5w-hilitecolor" data-h5w-function="hilitecolor" data-h5w-lang="highlight|title" title="Highlight"> </a>
+								<a href="#hilitecolorpicker" class="h5w-picker h5w-hilitecolor-picker" data-h5w-destination=".h5w-hilitecolor-picker" data-h5w-onchange-function="functions.hilitecolor" data-h5w-lang="highlightcolorpicker|title" title="Highlight color picker"> </a>
 								<a href="#seperator" class="h5w-seperator"></a>
-								<a href="#removeformat" class="h5w-icon h5w-removeformat" data-h5w-function="removeformat" title="Remove format"> </a>
+								<a href="#removeformat" class="h5w-icon h5w-removeformat" data-h5w-function="removeformat" data-h5w-lang="removeformat|title" title="Remove format"> </a>
 							
 							</div>
 						</div>
@@ -182,20 +176,20 @@
 		
 							
 								<a href="#seperator" class="h5w-seperator"></a>
-							<a href="#hrule" class="h5w-icon h5w-hrule" data-h5w-function="hrule" title="Add rule - hr"> </a>
+							<a href="#hrule" class="h5w-icon h5w-hrule" data-h5w-function="hrule" data-h5w-lang="addrule|title" title="Add rule - hr"> </a>
 							<a href="#seperator" class="h5w-seperator" ></a>
-							<a href="#listordered" class="h5w-icon h5w-listordered" data-h5w-function="listordered" title="List style - numeric"> </a>
-							<a href="#listunordered" class="h5w-icon h5w-listunordered" data-h5w-function="listunordered" title="List style - bull"> </a>
+							<a href="#listordered" class="h5w-icon h5w-listordered" data-h5w-function="listordered" data-h5w-lang="addlistnumeric|title" title="List style - numeric"> </a>
+							<a href="#listunordered" class="h5w-icon h5w-listunordered" data-h5w-function="listunordered" data-h5w-lang="addlistbull|title" title="List style - bull"> </a>
 			
 								<a href="#seperator" class="h5w-seperator" style="clear:both;" ></a>
-							<a href="#justifyleft" class="h5w-icon h5w-justifyleft" data-h5w-function="justifyleft" title="Left justify"> </a>
-							<a href="#justifycenter" class="h5w-icon h5w-justifycenter" data-h5w-function="justifycenter" title="Center justify"> </a>
-							<a href="#justifyright" class="h5w-icon h5w-justifyright" data-h5w-function="justifyright" title="Right justify"> </a>
+							<a href="#justifyleft" class="h5w-icon h5w-justifyleft" data-h5w-function="justifyleft" data-h5w-lang="leftjustify|title" title="Left justify"> </a>
+							<a href="#justifycenter" class="h5w-icon h5w-justifycenter" data-h5w-function="justifycenter" data-h5w-lang="centerjustify|title" title="Center justify"> </a>
+							<a href="#justifyright" class="h5w-icon h5w-justifyright" data-h5w-function="justifyright" data-h5w-lang="rightjustify|title" title="Right justify"> </a>
 					
 								<a href="#seperator" class="h5w-seperator" style="clear:both;" ></a>
-							<a href="#indent" class="h5w-icon h5w-indent" data-h5w-function="indent" title="Indent" > </a>
-							<a href="#outdent" class="h5w-icon h5w-outdent" data-h5w-function="outdent" title="Outdent"> </a>
-							<a href="#paragraph" class="h5w-icon h5w-paragraph" data-h5w-function="paragraph" title="Paragraph"> </a>
+							<a href="#indent" class="h5w-icon h5w-indent" data-h5w-function="indent" data-h5w-lang="ident|title" title="Indent" > </a>
+							<a href="#outdent" class="h5w-icon h5w-outdent" data-h5w-function="outdent" data-h5w-lang="outdent|title" title="Outdent"> </a>
+							<a href="#paragraph" class="h5w-icon h5w-paragraph" data-h5w-function="paragraph" data-h5w-lang="paragraph|title" title="Paragraph"> </a>
 							
 							
 							
@@ -267,12 +261,12 @@
 				<div id="Insert" class="h5w-card">
 					<div class="h5w-section" >
 						<div class="h5w-group">
-							<a href="#tablepicker" class="h5w-icon-nojs h5w-table h5w-tablepicker" data-h5w-onselect-function="functions.table" title="Insert table"> Table </a>
+							<a href="#tablepicker" class="h5w-icon-nojs h5w-table h5w-tablepicker" data-h5w-onselect-function="functions.table" title="Insert table" data-h5w-lang="table|title|html"> Table </a>
 							<a href="#seperator" class="h5w-group-seperator"></a>
-							<a href="#insertimage" class="h5w-icon h5w-insertimage" data-h5w-function="insertimage" title="Insert image"> Image </a>
+							<a href="#insertimage" class="h5w-icon h5w-insertimage" data-h5w-function="insertimage" data-h5w-lang="image|title|html" title="Insert image"> Image </a>
 							<a href="#seperator" class="h5w-group-seperator"></a>
-							<a href="#createlink" class="h5w-icon h5w-createlink" data-h5w-function="createlink" title="Insert URL"> Link </a>
-							<a href="#unlink" class="h5w-icon h5w-unlink" data-h5w-function="unlink" title="Remove URL from text"> Unlink </a>
+							<a href="#createlink" class="h5w-icon h5w-createlink" data-h5w-function="createlink" data-h5w-lang="link|title|html" title="Insert URL"> Link </a>
+							<a href="#unlink" class="h5w-icon h5w-unlink" data-h5w-function="unlink" title="Remove URL from text" data-h5w-lang="unlink|title|html"> Unlink </a>
 						</div>
 					</div>
 				
@@ -281,31 +275,31 @@
 					<div class="h5w-section"  style="width: 800px; ">
 						<div class="h5w-group">
 							<div class="h5w-style-inserthtml">
-								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert fieldset">
+								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" data-h5w-lang="insetfieldset|title" title="Insert fieldset">
 									<fieldset><legend>Example</legend>ExampleText</fieldset>
 								</a>
-								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert form">
+								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" data-h5w-lang="inserthtmlform|title" title="Insert form">
 									<form action="?" method="post">HTML Form</form>
 								</a>
-								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert text input">
+								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert text input" data-h5w-lang="insertinputtext|title">
 									<input type="text" value="AbCdEfGh" name="name" />
 								</a>
-								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert password input">
+								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert password input" data-h5w-lang="insertinputpassword|title">
 									<input type="password" value="AbCdEfGh" name="name" />
 								</a>
-								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert checkbox input">
+								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert checkbox input" data-h5w-lang="insertinputcheckbox|title">
 									<input type="checkbox" value="AbCdEfGh" name="name" />
 								</a>
-								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert radio input">
+								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert radio input" data-h5w-lang="insertinputradio|title">
 									<input type="radio" value="AbCdEfGh" name="name" />
 								</a>
-								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert submit button">
+								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert submit button" data-h5w-lang="insertinputsubmit|title">
 									<input type="submit" value="Submit" name="name" />
 								</a>
-								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert button">
+								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert button" data-h5w-lang="insertinputbutton|title">
 									<input type="button" value="Button" name="name" />
 								</a>
-								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert textarea">
+								<a href="#inserthtml" class="h5w-icon h5w-inserthtml" data-h5w-function="inserthtml" title="Insert textarea" data-h5w-lang="inserttextarea|title">
 									<textarea name="name"></textarea>
 								</a>
 		
@@ -331,8 +325,8 @@
 					<textarea id="h5w-textarea-id" class="h5w-texarea" ></textarea>
 					
 					<ul>
-						<li><a href="#h5w-id-content" class="h5w-refresh-editor">Visual</a></li>
-						<li><a href="#h5w-textarea-id" class="h5w-refresh-textarea" >Source HTML</a></li>
+						<li><a href="#h5w-id-content" class="h5w-refresh-editor" data-h5w-lang="visual">Visual</a></li>
+						<li><a href="#h5w-textarea-id" class="h5w-refresh-textarea" data-h5w-lang="sourcehtml">Source HTML</a></li>
 					</ul>
 				</div>
 	
@@ -367,28 +361,71 @@
 			</div>	
 			<div class="h5w-context-menu">
 				<ul>
-					<li><a href="#" class="h5w-icon-js h5w-c-delete" data-h5w-function="delete" data-h5w-result="true">Delete</a></li>
-					<li><a href="#" class="h5w-icon-js h5w-c-cut" data-h5w-function="cut" data-h5w-result="true">Cut</a></li>
-					<li><a href="#" class="h5w-icon-js h5w-c-copy" data-h5w-function="copy" data-h5w-result="true">Copy</a></li>
-					<li><a href="#" class="h5w-icon-js h5w-c-paste" data-h5w-function="paste" data-h5w-result="true">Paste</a></li>
-					<li><a href="#"  class="h5w-c-options">Element options</a>
+					<li><a href="#" class="h5w-icon-js h5w-c-delete" data-h5w-function="delete" data-h5w-lang="delete" data-h5w-result="true">Delete</a></li>
+					<li><a href="#" class="h5w-icon-js h5w-c-cut" data-h5w-function="cut" data-h5w-result="true" data-h5w-lang="cut">Cut</a></li>
+					<li><a href="#" class="h5w-icon-js h5w-c-copy" data-h5w-function="copy" data-h5w-result="true" data-h5w-lang="copy">Copy</a></li>
+					<li><a href="#" class="h5w-icon-js h5w-c-paste" data-h5w-function="paste" data-h5w-result="true" data-h5w-lang="paste">Paste</a></li>
+					<li><a href="#"  class="h5w-c-options" data-h5w-lang="elementoptions">Element options</a>
 						<ul class="h5w-c-options-element">
 						</ul>
 					</li>
-					<li><a href="#" class="h5w-c-attributes">Attributes</a> 
+					<li><a href="#" class="h5w-c-attributes" data-h5w-lang="attributes">Attributes</a> 
 						<ul class="h5w-c-attr">
 						</ul>
 					</li>
-					<li><a href="#" class="h5w-c-quit h5w-c-seperator">Quit</a></li>
+					<li><a href="#" class="h5w-c-quit h5w-c-seperator" data-h5w-lang="quit">Quit</a></li>
 				</ul>
 			</div>
 			
 		</div>
 		<!-- HTML5WYSIWYG Editor END --> 
 	</div>
-	<a href="#" class="getresult">get result</a>
+	<table style="margin-bottom: 300px;">
+		<tr>
+			<td>
+	<!-- GET CONTENT -->
+	<a href="#" class="get-result">get result</a>
 		<textarea id="result"></textarea>
+			<script>
+			$(function(){
+				$(".get-result").click(function(){
+						resultEditHTML = $("#demos").getContent();
+						$("#result").html(resultEditHTML);
+					return false;
+				});
+			});
+			</script>
+	<!-- GET CONTENT END-->
+	</td>
+	<td>
+		<!-- LANGUAGE SUPPORT -->
+			<script type="text/javascript" src="h5w/langs/lang_pl.js"></script> <!-- LOAD POLISH LANG -->
+			<a href="#" class="change-language">Change language to Polish</a>
+			<script>
+			$(function(){
+				$(".change-language").click(function(){
+					$("#demos").loadLang(h5w_lang_pl); //load language
+				return false;
+				});
+			});
+			</script>
+		<!-- LANGUAGE SUPPORT END -->
+		</td>	
+		<td>
+		<!-- JQUERY THEME ROLLING -->
+			<script>
+			  $(document).ready(function(){
+				$('#switcher').themeswitcher();
+			  });
+			  </script>
+			  <script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/">
+</script>
+<div id="switcher"></div>
 	
+		<!-- JQUERY THEME ROLLING END -->
+		</td>
+	</tr>
+	</table>
 	</body>
 </html>
 

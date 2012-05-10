@@ -400,11 +400,17 @@
 	<td>
 		<!-- LANGUAGE SUPPORT -->
 			<script type="text/javascript" src="h5w/langs/lang_pl.js"></script> <!-- LOAD POLISH LANG -->
-			<a href="#" class="change-language">Change language to Polish</a>
+			<script type="text/javascript" src="h5w/langs/lang_ru.js"></script> <!-- LOAD POLISH LANG -->
+			<a href="#" class="change-language-pl">Change language to Polish</a>
+			<a href="#" class="change-language-ru">Change language to Russian</a>
 			<script>
 			$(function(){
-				$(".change-language").click(function(){
+				$(".change-language-pl").click(function(){
 					$("#demos").loadLang(h5w_lang_pl); //load language
+				return false;
+				});		
+				$(".change-language-ru").click(function(){
+					$("#demos").loadLang(h5w_lang_ru); //load language
 				return false;
 				});
 			});

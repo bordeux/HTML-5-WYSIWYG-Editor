@@ -4,9 +4,22 @@
 
 = HTML 5 WYSIWYG Editor =
 == Project is died, because i dont have a money to continue ==
-I need 500$ to rewrite base code, and give for us new version, with docs and examples. Paypal: admin@bordeux.net Current status: 2$ on PayPal.
+I need 500$ to rewrite base code, and give for us new version, with docs and examples. Paypal: admin@bordeux.net 
 
-
+{| class="wikitable"
+|-
+! scope="col"| User
+! scope="col"| Payment
+|-
+! scope="row"| SMarek
+| 1$
+|-
+! scope="row"| VagProger
+| 2$
+|-
+! scope="row" colspan="1"| Total
+| $3
+|}
 
 This is part of XVweb project.
 What's new in 0.48? 

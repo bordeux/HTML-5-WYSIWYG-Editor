@@ -24,3 +24,4 @@ Yes? Write your proposition <a href="https://github.com/bordeux/HTML-5-WYSIWYG-E
 
 = PayPal =
 I need 500$ to rewrite base code, and give for us new version, with docs and examples. Paypal: admin@bordeux.net
+Current status: 2$ on PayPal.

@@ -3,6 +3,8 @@
 <p align="center"><img src="http://img402.imageshack.us/img402/8499/html5logo.jpg"  /></p>
 
 = HTML 5 WYSIWYG Editor =
+== Project is died, because i dont have a money to continue ==
+
 This is part of XVweb project.
 What's new in 0.48? 
 	* Now language support
@@ -18,3 +20,7 @@ Yes? Write your proposition <a href="https://github.com/bordeux/HTML-5-WYSIWYG-E
 = Demo =
 
 <p align="center"><a href="http://bordeux.github.com/HTML-5-WYSIWYG-Editor/"> <img src="http://img140.imageshack.us/img140/7695/demoy.png"  /> </a> </p>
+
+
+= PayPal =
+I need 500$ to rewrite base code, and give for us new version, with docs and examples. Paypal: admin@bordeux.net

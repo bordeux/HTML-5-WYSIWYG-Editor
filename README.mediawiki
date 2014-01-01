@@ -4,6 +4,9 @@
 
 = HTML 5 WYSIWYG Editor =
 == Project is died, because i dont have a money to continue ==
+I need 500$ to rewrite base code, and give for us new version, with docs and examples. Paypal: admin@bordeux.net Current status: 2$ on PayPal.
+
+
 
 This is part of XVweb project.
 What's new in 0.48? 
@@ -22,6 +25,3 @@ Yes? Write your proposition <a href="https://github.com/bordeux/HTML-5-WYSIWYG-E
 <p align="center"><a href="http://bordeux.github.com/HTML-5-WYSIWYG-Editor/"> <img src="http://img140.imageshack.us/img140/7695/demoy.png"  /> </a> </p>
 
 
-= PayPal =
-I need 500$ to rewrite base code, and give for us new version, with docs and examples. Paypal: admin@bordeux.net
-Current status: 2$ on PayPal.

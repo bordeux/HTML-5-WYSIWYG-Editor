@@ -1,0 +1,1 @@
+})(h5wClass, jQuery);

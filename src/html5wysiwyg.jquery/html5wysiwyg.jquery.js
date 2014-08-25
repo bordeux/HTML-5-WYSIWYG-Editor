@@ -155,6 +155,16 @@ var h5wClass = {};
 
         return namespace.bootstrap;
     })(app, app, window);;
+    (function(namespace, app, globals) {
+
+        namespace.toolbar = function() {
+
+        };
+
+
+
+        return namespace.toolbar;
+    })(app.namespace('ers'), app, window);;
     /**
      * Bootstrap class
      * @param {object} namespace

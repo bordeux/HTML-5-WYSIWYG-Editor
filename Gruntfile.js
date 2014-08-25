@@ -51,7 +51,21 @@ module.exports = function(grunt) {
                 'src/html5wysiwyg.jquery/html5wysiwyg.jquery.min.css': ['src/html5wysiwyg.jquery/html5wysiwyg.jquery.css']
               }
             }
-          }
+          },
+          'http-server': {
+            'dev': {
+                root: 'src/',
+                port: 8282,
+                host: "127.0.0.1",
+                cache: 1,
+                showDir : true,
+                autoIndex: true,
+                defaultExt: "html",
+                runInBackground: true
+
+            }
+
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -60,6 +74,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jsbeautifier');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-http-server');
     
-    grunt.registerTask('default', ['jsbeautifier:default', 'uglify', 'concat', 'sass', 'cssmin','jsbeautifier:app', 'watch']);
+    grunt.registerTask('default', ['jsbeautifier:default', 'uglify', 'concat', 'sass', 'http-server', 'cssmin','jsbeautifier:app', 'watch']);
 };

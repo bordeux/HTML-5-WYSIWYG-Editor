@@ -35,6 +35,6 @@ Yes? Write your proposition <a href="https://github.com/bordeux/HTML-5-WYSIWYG-E
 	
 = Demo =
 
-<p align="center"><a href="http://bordeux.github.com/HTML-5-WYSIWYG-Editor/"> <img src="http://img140.imageshack.us/img140/7695/demoy.png"  /> </a> </p>
+<p align="center"><a href="http://bordeux.github.com/HTML-5-WYSIWYG-Editor/"> <img src="https://raw.githubusercontent.com/bordeux/HTML-5-WYSIWYG-Editor/gh-pages/screen.png"  /> </a> </p>
 
 
